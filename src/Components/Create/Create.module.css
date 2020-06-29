@@ -1,0 +1,104 @@
+/*Create Component Styling*/
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5rem auto;
+  padding: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 500px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.container h1 {
+  font-family: "Nunito", sans-serif;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.container p {
+  margin-bottom: 0.5rem;
+}
+
+.container input[type="text"],
+.container .inputs {
+  margin-bottom: 1rem;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 15px;
+}
+
+.container input[type="text"]::-webkit-input-placeholder,
+.container .inputs::-webkit-input-placeholder {
+  font-size: 15px;
+}
+
+.container input[type="text"]:-ms-input-placeholder,
+.container .inputs:-ms-input-placeholder {
+  font-size: 15px;
+}
+
+.container input[type="text"]::-ms-input-placeholder,
+.container .inputs::-ms-input-placeholder {
+  font-size: 15px;
+}
+
+.container input[type="text"]::placeholder,
+.container .inputs::placeholder {
+  font-size: 15px;
+}
+
+.container input[type="text"]:focus,
+.container .inputs:focus {
+  outline: none;
+}
+
+.heading {
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.imageSelector {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.postBtn {
+  cursor: pointer;
+  letter-spacing: 1px;
+  background: none;
+  border: 1.5px solid #9431d5;
+  border-radius: 5px;
+  font-size: 18px;
+  color: black;
+  padding: 4px 10px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.postBtn:focus {
+  outline: none;
+}
+
+.postBtn:hover {
+  background-color: #9431d5;
+  color: white;
+}
+
+.postBtn:active {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+/*# sourceMappingURL=Create.module.css.map */

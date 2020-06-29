@@ -1,0 +1,85 @@
+/*Create Component Styling*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  margin: 5rem auto;
+  padding: 10px;
+
+  align-items: center;
+  justify-content: space-around;
+
+  h1 {
+    font-family: "Nunito", sans-serif;
+    color: rgba(0, 0, 0, 0.9);
+  }
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+
+  height: fit-content;
+  width: 500px;
+
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+
+  input[type="text"],
+  .inputs {
+    margin-bottom: 1rem;
+    padding: 5px;
+
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+    font-size: 15px;
+
+    &::placeholder {
+      font-size: 15px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.heading {
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.imageSelector {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.postBtn {
+  cursor: pointer;
+  letter-spacing: 1px;
+
+  background: none;
+  border: 1.5px solid rgb(148, 49, 213);
+  border-radius: 5px;
+
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+
+  padding: 4px 10px;
+
+  transition: 0.3s ease;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: rgb(148, 49, 213);
+    color: rgb(255, 255, 255);
+  }
+
+  &:active {
+    transform: translateY(-2px);
+  }
+}

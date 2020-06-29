@@ -77,9 +77,25 @@
   font-size: 15px;
   color: #9431d5;
   padding: 10px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .readMoreBtn i {
   font-size: 18px;
+}
+
+.readMoreBtn:focus {
+  outline: none;
+}
+
+.readMoreBtn:hover {
+  background-color: #9431d5;
+  color: white;
+}
+
+.readMoreBtn:active {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 /*# sourceMappingURL=LandingPage.module.css.map */

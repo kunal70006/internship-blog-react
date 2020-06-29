@@ -68,9 +68,24 @@
   font-size: 15px;
   color: rgb(148, 49, 213);
 
+  padding: 10px;
+
+  transition: 0.3s ease;
+
   i {
     font-size: 18px;
   }
 
-  padding: 10px;
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: rgb(148, 49, 213);
+    color: rgb(255, 255, 255);
+  }
+
+  &:active {
+    transform: translateY(-2px);
+  }
 }
