@@ -1,0 +1,76 @@
+/*Main Content Styling*/
+
+.outerContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem auto;
+  align-items: center;
+
+  h1 {
+    font-family: "Nunito", sans-serif;
+    color: rgba(0, 0, 0, 0.9);
+  }
+}
+
+#blog-site {
+  font-size: 40px;
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+
+  height: fit-content;
+  width: 900px;
+
+  padding: 10px;
+
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.blog {
+  display: flex;
+  margin: auto 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+
+  letter-spacing: 0.5px;
+}
+
+.heading {
+  font-size: 30px;
+}
+
+.image {
+  height: 200px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+.date {
+  color: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
+}
+
+.desc {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.readMoreBtn {
+  cursor: pointer;
+
+  background: none;
+  border: 1.5px solid rgb(148, 49, 213);
+  border-radius: 5px;
+
+  font-size: 15px;
+  color: rgb(148, 49, 213);
+
+  i {
+    font-size: 18px;
+  }
+
+  padding: 10px;
+}
