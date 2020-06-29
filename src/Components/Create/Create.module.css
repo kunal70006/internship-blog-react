@@ -63,6 +63,7 @@
 .container input[type="text"]:focus,
 .container .inputs:focus {
   outline: none;
+  border: 1px solid #9431d5;
 }
 
 .heading {
