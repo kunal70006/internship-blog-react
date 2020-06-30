@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 
-import { LandingPage, Create, Show, Edit, Delete } from "./Components";
+import { LandingPage, Create, Show, Edit } from "./Components";
 
 function App() {
   return (
@@ -13,7 +13,6 @@ function App() {
           <Route exact path="/create" component={Create} />
           <Route exact path="/show" component={Show} />
           <Route exact path="/edit" component={Edit} />
-          <Route exact path="/delete" component={Delete} />
         </Switch>
       </div>
     </Router>

@@ -42,9 +42,9 @@ const LandingPage = () => {
         <div className={styles.outerContainer}>
           <h1 id="blog-site">Blog Site</h1>
           <div className={styles.innerContainer}>
-            {blogs.map((blog) => {
+            {blogs.map((blog, index) => {
               return (
-                <div className={styles.blog}>
+                <div className={styles.blog} key={index}>
                   <img src={blog.imageUrl} alt="img" className={styles.image} />
                   <div className={styles.textContainer}>
                     <h1 className={styles.heading}>{blog.title}</h1>

@@ -25,7 +25,6 @@ const Show = () => {
         .doc(id)
         .get()
         .then((data) => {
-          console.log(data.data());
           setCurrentBlog(data.data());
         });
     } else {
@@ -42,17 +41,27 @@ const Show = () => {
   }, []);
 
   const deleteItem = () => {
-    console.log(currentBlog.id);
-    console.log("bruh");
-    firebase
-      .firestore()
-      .collection("items")
-      .doc(currentBlog.id)
-      .delete()
-      .then(() => {
-        console.log("Done");
-        history.push("/");
-      });
+    if (typeof location.id === "undefined") {
+      let id = sessionStorage.getItem("blogID");
+      firebase
+        .firestore()
+        .collection("items")
+        .doc(id)
+        .delete()
+        .then(() => {
+          history.push("/");
+        });
+    } else {
+      sessionStorage.setItem("blogID", location.id);
+      firebase
+        .firestore()
+        .collection("items")
+        .doc(location.id)
+        .delete()
+        .then(() => {
+          history.push("/");
+        });
+    }
   };
 
   return (

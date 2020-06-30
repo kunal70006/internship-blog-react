@@ -1,1 +1,118 @@
-/* No CSS *//*# sourceMappingURL=Edit.module.css.map */
+.editContainer {
+  margin: 5rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title {
+  font-family: "Nunito", sans-serif;
+  color: rgba(0, 0, 0, 0.9);
+  margin-bottom: 1rem;
+}
+
+.itemDiv {
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.itemDiv textarea {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.itemDiv textarea:disabled {
+  background-color: #f0f0f0;
+}
+
+.editBtn {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  font-size: 20px;
+  background: none;
+  border: none;
+}
+
+.editBtn:focus {
+  outline: none;
+}
+
+.img {
+  height: 300px;
+  width: 300px;
+  margin: 0 25px 1rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.imgChange {
+  margin-bottom: 1rem;
+}
+
+.submitChanges {
+  cursor: pointer;
+  letter-spacing: 1px;
+  background: none;
+  border: 1.5px solid #9431d5;
+  border-radius: 5px;
+  font-size: 18px;
+  color: black;
+  padding: 4px 10px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+  letter-spacing: 1px;
+  background: none;
+  border: 1.5px solid #9431d5;
+  border-radius: 5px;
+  font-size: 18px;
+  color: black;
+  padding: 4px 10px;
+  transition: 0.3s ease;
+}
+
+.submitChanges:focus {
+  outline: none;
+}
+
+.submitChanges:hover {
+  background-color: #9431d5;
+  color: white;
+}
+
+.submitChanges:active {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.submitChanges:focus {
+  outline: none;
+}
+
+.submitChanges:hover {
+  background-color: #9431d5;
+  color: white;
+}
+
+.submitChanges:active {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+/*# sourceMappingURL=Edit.module.css.map */
